@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Price Predictor</title>
+</head>
+<body>
+
+    <h1>Stock Price Prediction</h1>
+
+    <form action="/predict/" method="POST">
+        {% csrf_token %}
+        <label>Enter Stock Symbol (Example: RELIANCE.NS):</label><br><br>
+        <input type="text" name="stock_name" required>
+        <br><br>
+        <button type="submit">Predict Price</button>
+    </form>
+
+</body>
+</html>
